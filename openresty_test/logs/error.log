@@ -1,483 +1,116 @@
-2018/07/04 15:54:35 [emerg] 4992#732: CreateDirectory() "openresty_test/temp/client_body_temp" failed (3: The system cannot find the path specified)
-2018/07/04 15:55:47 [notice] 6408#6504: using inherited sockets from "428;"
-2018/07/04 16:10:20 [notice] 7052#2868: signal process started
-2018/07/04 16:10:21 [notice] 7028#3412: using inherited sockets from "480;"
-2018/07/04 16:28:26 [notice] 5052#6336: signal process started
-2018/07/04 16:28:27 [notice] 6124#2076: using inherited sockets from "436;"
-2018/07/04 16:30:05 [notice] 3096#6044: signal process started
-2018/07/04 16:30:07 [notice] 2768#6484: using inherited sockets from "428;"
-2018/07/04 17:33:31 [notice] 5048#6028: using inherited sockets from "428;"
-2018/07/04 17:35:49 [notice] 5248#6408: signal process started
-2018/07/04 17:35:50 [notice] 5684#6592: using inherited sockets from "480;"
-2018/07/04 17:38:34 [notice] 3308#6856: signal process started
-2018/07/04 17:38:35 [notice] 5268#3028: using inherited sockets from "436;"
-2018/07/04 17:39:53 [notice] 4580#5348: signal process started
-2018/07/04 17:39:54 [notice] 1932#5036: using inherited sockets from "428;"
-2018/07/04 17:41:01 [notice] 328#7100: using inherited sockets from "428;"
-2018/07/04 17:42:43 [notice] 5448#6148: using inherited sockets from "428;"
-2018/07/04 17:43:02 [error] 5448#2120: *1 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:70):2: module 'resty.template' not found:
-	no field package.preload['resty.template']
-	no file 'd:\lua'
-	no file '.\resty\template.dll'
-	no file 'D:\openresty\lualib\resty\template.so'
-	no file 'D:\openresty\resty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\resty.dll'
-	no file 'D:\openresty\lualib\resty.so'
-	no file 'D:\openresty\resty.dll'
-	no file 'D:\openresty\loadall.dll'
+2018/07/12 10:44:32 [notice] 3040#4496: signal process started
+2018/07/12 10:44:33 [notice] 4012#5888: using inherited sockets from "448;432;424;436;"
+2018/07/12 10:44:34 [error] 4012#5604: *14 lua entry thread aborted: runtime error: openresty_test/lua/json_test.lua:39: Cannot serialise table: excessively sparse array
 stack traceback:
 coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:70):2: in function <content_by_lua(nginx.conf:70):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:46:51 [emerg] 4740#2028: directive "lua_package_path" is not terminated by ";" in openresty_test/conf/nginx.conf:10
-2018/07/04 17:47:17 [notice] 5732#5180: signal process started
-2018/07/04 17:47:18 [notice] 5976#5484: using inherited sockets from "480;"
-2018/07/04 17:47:31 [error] 5976#2364: *2 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'resty.template' not found:
-	no field package.preload['resty.template']
-	no file '.\resty\resty\template.lua'
-	no file '.\resty\template.dll'
-	no file 'D:\openresty\lualib\resty\template.so'
-	no file 'D:\openresty\resty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\resty.dll'
-	no file 'D:\openresty\lualib\resty.so'
-	no file 'D:\openresty\resty.dll'
-	no file 'D:\openresty\loadall.dll'
+	[C]: in function 'encode'
+	openresty_test/lua/json_test.lua:39: in function <openresty_test/lua/json_test.lua:1>, client: 127.0.0.1, server: , request: "GET /json_test HTTP/1.1", host: "localhost:6699"
+2018/07/12 10:45:12 [notice] 764#4884: signal process started
+2018/07/12 10:45:13 [notice] 5696#732: using inherited sockets from "432;448;444;476;"
+2018/07/12 10:45:14 [error] 5696#5524: *15 lua entry thread aborted: runtime error: openresty_test/lua/json_test.lua:39: bad argument #1 to 'encode_sparse_array' (string expected, got table)
 stack traceback:
 coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:48:54 [notice] 5836#4568: signal process started
-2018/07/04 17:48:55 [notice] 7124#5216: using inherited sockets from "436;"
-2018/07/04 17:48:57 [error] 7124#5904: *3 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'resty.template' not found:
-	no field package.preload['resty.template']
-	no file 'd:\lua'
-	no file '.\resty\template.dll'
-	no file 'D:\openresty\lualib\resty\template.so'
-	no file 'D:\openresty\resty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\resty.dll'
-	no file 'D:\openresty\lualib\resty.so'
-	no file 'D:\openresty\resty.dll'
-	no file 'D:\openresty\loadall.dll'
+	[C]: in function 'encode_sparse_array'
+	openresty_test/lua/json_test.lua:39: in function <openresty_test/lua/json_test.lua:1>, client: 127.0.0.1, server: , request: "GET /json_test HTTP/1.1", host: "localhost:6699"
+2018/07/12 10:45:50 [notice] 6092#4452: signal process started
+2018/07/12 10:45:51 [notice] 5684#4680: using inherited sockets from "448;432;500;496;"
+2018/07/12 10:57:29 [notice] 4416#2468: signal process started
+2018/07/12 10:57:30 [notice] 4060#6132: using inherited sockets from "432;448;424;436;"
+2018/07/12 10:59:31 [notice] 3708#4624: signal process started
+2018/07/12 10:59:32 [notice] 5152#5132: using inherited sockets from "448;432;444;476;"
+2018/07/12 10:59:55 [notice] 5804#4680: signal process started
+2018/07/12 10:59:56 [notice] 4416#5788: using inherited sockets from "432;448;500;496;"
+2018/07/12 11:00:22 [notice] 5548#4140: signal process started
+2018/07/12 11:00:23 [notice] 4924#6120: using inherited sockets from "448;432;424;436;"
+2018/07/12 11:00:52 [notice] 6064#3612: signal process started
+2018/07/12 11:00:53 [notice] 5832#3708: using inherited sockets from "432;448;444;476;"
+2018/07/12 11:01:31 [notice] 5996#5328: signal process started
+2018/07/12 11:01:32 [notice] 5380#4424: using inherited sockets from "448;432;500;496;"
+2018/07/12 19:30:48 [emerg] 7568#9140: unknown directive "bodyfilter_by_lua_file" in openresty_test/conf/nginx.conf:40
+2018/07/12 19:31:11 [notice] 8520#8440: signal process started
+2018/07/12 19:31:13 [notice] 8552#9120: using inherited sockets from "432;448;424;436;"
+2018/07/12 19:37:44 [notice] 8228#6412: signal process started
+2018/07/12 19:37:45 [notice] 8392#6132: using inherited sockets from "448;432;444;476;"
+2018/07/12 19:38:29 [notice] 8520#1132: signal process started
+2018/07/12 19:38:30 [notice] 8660#7948: using inherited sockets from "432;448;500;496;"
+2018/07/13 10:30:01 [notice] 260#2500: signal process started
+2018/07/13 10:30:01 [error] 260#2500: OpenEvent("Global\ngx_reload_5352") failed (2: The system cannot find the file specified)
+2018/07/13 10:30:08 [notice] 1548#5000: using inherited sockets from "452;448;480;484;"
+2018/07/13 10:30:32 [error] 1548#2420: *1 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:4: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 10:30:39 [error] 1548#2420: *4 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:4: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:30:46 [error] 1548#2420: *7 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:4: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 10:38:54 [error] 1548#2420: *10 failed to load external Lua file "openresty_test/lua/get_avg_upstreamtime.lua": openresty_test/lua/get_avg_upstreamtime.lua:7: unexpected symbol near ')', client: 127.0.0.1, server: , request: "GET /status HTTP/1.1", host: "localhost:6699"
+2018/07/13 10:40:38 [error] 1548#2420: *11 failed to load external Lua file "openresty_test/lua/get_avg_upstreamtime.lua": openresty_test/lua/get_avg_upstreamtime.lua:7: unexpected symbol near ')', client: 127.0.0.1, server: , request: "GET /status HTTP/1.1", host: "localhost:6699"
+2018/07/13 10:41:41 [error] 1548#2420: *12 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:4: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:41:53 [error] 1548#2420: *16 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:4: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:45:02 [notice] 3880#5148: signal process started
+2018/07/13 10:45:03 [notice] 2816#6556: using inherited sockets from "448;452;508;504;"
+2018/07/13 10:45:16 [error] 2816#7120: *20 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:4: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:46:49 [notice] 2872#6152: signal process started
+2018/07/13 10:46:50 [notice] 6708#4712: using inherited sockets from "452;448;428;440;"
+2018/07/13 10:46:53 [error] 6708#6280: *24 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:5: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:47:13 [notice] 1184#6972: signal process started
+2018/07/13 10:47:14 [notice] 228#7004: using inherited sockets from "448;452;480;484;"
+2018/07/13 10:47:16 [error] 228#6880: *27 failed to load external Lua file "openresty_test/lua/upstream_time_statistic.lua": openresty_test/lua/upstream_time_statistic.lua:5: '=' expected near '+' while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:48:39 [error] 228#6880: *31 [lua] upstream_time_statistic.lua:3: 0 while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:50:48 [error] 228#6880: *34 [lua] upstream_time_statistic.lua:3: 0 while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 10:51:44 [error] 228#6880: *37 [lua] upstream_time_statistic.lua:3: 0 while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 11:01:53 [notice] 6600#5692: signal process started
+2018/07/13 11:01:54 [notice] 3192#6152: using inherited sockets from "452;448;508;504;"
+2018/07/13 11:02:30 [error] 3192#6556: *40 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", host: "localhost:6699"
+2018/07/13 11:02:30 [error] 3192#6556: *40 failed to run log_by_lua*: openresty_test/lua/upstream_time_statistic.lua:7: attempt to perform arithmetic on local 'upstream_time' (a nil value)
+stack traceback:
+	openresty_test/lua/upstream_time_statistic.lua:7: in function <openresty_test/lua/upstream_time_statistic.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", host: "localhost:6699"
+2018/07/13 11:29:21 [notice] 6260#6832: signal process started
+2018/07/13 11:29:22 [notice] 6636#6528: using inherited sockets from "448;452;428;440;"
+2018/07/13 11:30:38 [error] 6636#5236: *41 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:30:43 [error] 6636#5236: *44 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 11:31:36 [notice] 7112#5136: signal process started
+2018/07/13 11:31:37 [notice] 4848#6188: using inherited sockets from "452;448;480;484;"
+2018/07/13 11:31:39 [error] 4848#3284: *50 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:31:40 [error] 4848#3284: *53 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /world HTTP/1.1", upstream: "http://127.0.0.1:8080/world", host: "localhost:6699"
+2018/07/13 11:32:50 [notice] 5904#1068: signal process started
+2018/07/13 11:32:51 [notice] 6392#5000: using inherited sockets from "448;452;508;504;"
+2018/07/13 11:32:52 [error] 6392#4508: *57 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:33:13 [notice] 6696#6508: signal process started
+2018/07/13 11:33:14 [notice] 5784#6544: using inherited sockets from "452;448;428;440;"
+2018/07/13 11:33:39 [notice] 6240#6212: signal process started
+2018/07/13 11:33:40 [notice] 5708#6388: using inherited sockets from "448;452;480;484;"
+2018/07/13 11:36:25 [notice] 6732#5364: signal process started
+2018/07/13 11:36:26 [notice] 6188#4848: using inherited sockets from "452;448;508;504;"
+2018/07/13 11:36:28 [error] 6188#6788: *63 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:36:41 [error] 6188#6788: *66 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:36:41 [error] 6188#6788: *70 CreateFile() "openresty_test/html/www.baidu.com" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www.baidu.com HTTP/1.0", host: "remote_hello"
+2018/07/13 11:36:41 [error] 6188#6788: *66 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /www.baidu.com HTTP/1.1", upstream: "http://127.0.0.1:8080/www.baidu.com", host: "localhost:6699"
+2018/07/13 11:37:03 [error] 6188#6788: *71 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:37:03 [error] 6188#6788: *75 CreateFile() "openresty_test/html/www.baidu.com" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www.baidu.com HTTP/1.0", host: "remote_hello"
+2018/07/13 11:37:03 [error] 6188#6788: *71 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /www.baidu.com HTTP/1.1", upstream: "http://127.0.0.1:8080/www.baidu.com", host: "localhost:6699"
+2018/07/13 11:37:19 [error] 6188#6788: *76 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:37:29 [error] 6188#6788: *79 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /hello HTTP/1.1", upstream: "http://127.0.0.1:8080/hello", host: "localhost:6699"
+2018/07/13 11:37:29 [error] 6188#6788: *83 CreateFile() "openresty_test/html/www.baidu.com" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www.baidu.com HTTP/1.0", host: "remote_hello"
+2018/07/13 11:37:29 [error] 6188#6788: *79 [lua] upstream_time_statistic.lua:4: hello while logging request, client: 127.0.0.1, server: , request: "GET /www.baidu.com HTTP/1.1", upstream: "http://127.0.0.1:8080/www.baidu.com", host: "localhost:6699"
+2018/07/13 11:39:50 [notice] 6556#1396: signal process started
+2018/07/13 11:39:52 [notice] 6344#6584: using inherited sockets from "448;452;428;440;"
+2018/07/13 11:39:53 [error] 6344#6548: *85 lua entry thread aborted: runtime error: openresty_test/lua/get_avg_upstreamtime.lua:4: attempt to call global 'tonum' (a nil value)
 stack traceback:
 coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:50:13 [notice] 5644#3388: signal process started
-2018/07/04 17:50:14 [notice] 5144#7016: using inherited sockets from "428;"
-2018/07/04 17:50:16 [error] 5144#5996: *4 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'resty.template' not found:
-	no field package.preload['resty.template']
-	no file '.'
-	no file 'd:\lua'
-	no file '.\resty\template.dll'
-	no file 'D:\openresty\lualib\resty\template.so'
-	no file 'D:\openresty\resty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\resty.dll'
-	no file 'D:\openresty\lualib\resty.so'
-	no file 'D:\openresty\resty.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:51:29 [notice] 6388#6720: signal process started
-2018/07/04 17:51:30 [notice] 2792#3016: using inherited sockets from "480;"
-2018/07/04 17:51:33 [error] 2792#7068: *5 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'template' not found:
-	no field package.preload['template']
-	no file '.\resty\template.lua'
-	no file 'd:\lua'
-	no file '.\template.dll'
-	no file 'D:\openresty\lualib\template.so'
-	no file 'D:\openresty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:53:36 [notice] 5612#6940: signal process started
-2018/07/04 17:53:37 [notice] 6484#5012: using inherited sockets from "436;"
-2018/07/04 17:53:40 [error] 6484#604: *6 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'template' not found:
-	no field package.preload['template']
-	no file '..\resty\template.lua'
-	no file 'd:\lua'
-	no file '.\template.dll'
-	no file 'D:\openresty\lualib\template.so'
-	no file 'D:\openresty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:54:54 [notice] 6428#5356: signal process started
-2018/07/04 17:54:55 [notice] 2516#6196: using inherited sockets from "428;"
-2018/07/04 17:54:57 [error] 2516#640: *7 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'resty.template' not found:
-	no field package.preload['resty.template']
-	no file 'D:\openresty\openresty_test'
-	no file 'd:\lua'
-	no file '.\resty\template.dll'
-	no file 'D:\openresty\lualib\resty\template.so'
-	no file 'D:\openresty\resty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\resty.dll'
-	no file 'D:\openresty\lualib\resty.so'
-	no file 'D:\openresty\resty.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:56:54 [notice] 4820#6108: signal process started
-2018/07/04 17:56:54 [notice] 6372#2004: using inherited sockets from "480;"
-2018/07/04 17:56:59 [error] 6372#6784: *8 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'template' not found:
-	no field package.preload['template']
-	no file '..esty\template.lua'
-	no file 'd:\lua'
-	no file '.\template.dll'
-	no file 'D:\openresty\lualib\template.so'
-	no file 'D:\openresty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:58:12 [notice] 4800#6992: signal process started
-2018/07/04 17:58:14 [notice] 6948#956: using inherited sockets from "436;"
-2018/07/04 17:58:14 [error] 6948#6504: *9 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'template' not found:
-	no field package.preload['template']
-	no file 'D:\openresty\openresty_test\resty'
-	no file 'd:\lua'
-	no file '.\template.dll'
-	no file 'D:\openresty\lualib\template.so'
-	no file 'D:\openresty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 17:58:46 [notice] 5136#4932: signal process started
-2018/07/04 17:58:47 [notice] 6700#5652: using inherited sockets from "428;"
-2018/07/04 17:59:37 [notice] 5256#740: signal process started
-2018/07/04 17:59:38 [notice] 3460#4740: using inherited sockets from "480;"
-2018/07/04 17:59:39 [error] 3460#5352: *11 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:71):2: module 'template' not found:
-	no field package.preload['template']
-	no file '..\resty\template.lua'
-	no file 'd:\lua'
-	no file '.\template.dll'
-	no file 'D:\openresty\lualib\template.so'
-	no file 'D:\openresty\template.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:71):2: in function <content_by_lua(nginx.conf:71):1>, client: 127.0.0.1, server: , request: "GET /template HTTP/1.1", host: "localhost:6699"
-2018/07/04 18:01:00 [notice] 4912#3556: signal process started
-2018/07/04 18:01:01 [notice] 5944#6316: using inherited sockets from "436;"
-2018/07/04 18:05:02 [notice] 5928#3924: signal process started
-2018/07/04 18:05:04 [notice] 6504#3640: using inherited sockets from "428;"
-2018/07/04 18:06:28 [notice] 1380#1348: signal process started
-2018/07/04 18:06:29 [notice] 5232#3504: using inherited sockets from "480;"
-2018/07/05 10:54:56 [notice] 5672#3228: using inherited sockets from "428;"
-2018/07/05 11:09:26 [notice] 4256#5504: signal process started
-2018/07/05 11:09:28 [notice] 3568#2764: using inherited sockets from "480;"
-2018/07/05 11:13:56 [notice] 2032#3588: signal process started
-2018/07/05 11:13:58 [notice] 5804#5560: using inherited sockets from "436;"
-2018/07/05 11:14:17 [error] 5804#5496: *5 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:19):3: attempt to concatenate global 'args' (a nil value)
-stack traceback:
-coroutine 0:
-	content_by_lua(nginx.conf:19): in function <content_by_lua(nginx.conf:19):1>, client: 127.0.0.1, server: , request: "POST /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 11:15:03 [notice] 5940#5712: signal process started
-2018/07/05 11:15:04 [notice] 3352#2744: using inherited sockets from "428;"
-2018/07/05 11:15:07 [error] 3352#3316: *6 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:19):3: attempt to concatenate local 'name' (a nil value)
-stack traceback:
-coroutine 0:
-	content_by_lua(nginx.conf:19): in function <content_by_lua(nginx.conf:19):1>, client: 127.0.0.1, server: , request: "POST /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 11:15:44 [notice] 6120#3636: signal process started
-2018/07/05 11:15:45 [notice] 5328#5876: using inherited sockets from "480;"
-2018/07/05 11:16:27 [notice] 4400#3928: signal process started
-2018/07/05 11:16:28 [notice] 5924#2648: using inherited sockets from "436;"
-2018/07/05 11:21:28 [notice] 3032#1088: signal process started
-2018/07/05 11:21:29 [notice] 3680#5568: using inherited sockets from "428;"
-2018/07/05 11:28:05 [notice] 5576#5676: signal process started
-2018/07/05 11:28:06 [notice] 4376#3024: using inherited sockets from "480;"
-2018/07/05 11:28:09 [error] 4376#4400: *10 failed to load inlined Lua code: content_by_lua(nginx.conf:36):4: ')' expected (to close '(' at line 3) near 'local', client: 127.0.0.1, server: , request: "POST /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 11:28:54 [notice] 2128#3416: signal process started
-2018/07/05 11:28:56 [notice] 4332#4128: using inherited sockets from "436;"
-2018/07/05 11:33:19 [notice] 6016#4140: signal process started
-2018/07/05 11:33:21 [notice] 5568#4848: using inherited sockets from "428;"
-2018/07/05 11:36:23 [notice] 1784#3344: signal process started
-2018/07/05 11:36:25 [notice] 5176#4164: using inherited sockets from "480;"
-2018/07/05 11:38:42 [notice] 5528#5804: signal process started
-2018/07/05 11:38:43 [notice] 4480#5568: using inherited sockets from "436;"
-2018/07/05 11:40:20 [notice] 2128#1904: signal process started
-2018/07/05 11:40:21 [notice] 3584#4256: using inherited sockets from "428;"
-2018/07/05 11:45:51 [emerg] 4472#952: unexpected "}" in openresty_test/conf/nginx.conf:29
-2018/07/05 11:46:25 [notice] 3568#5408: signal process started
-2018/07/05 11:46:26 [notice] 4472#4460: using inherited sockets from "480;"
-2018/07/05 11:53:52 [notice] 4536#5408: signal process started
-2018/07/05 11:53:52 [notice] 3032#5632: using inherited sockets from "436;"
-2018/07/05 11:56:32 [emerg] 4252#4176: unexpected end of file, expecting "}" in openresty_test/conf/nginx.conf:24
-2018/07/05 11:56:45 [notice] 1412#5276: signal process started
-2018/07/05 11:56:46 [notice] 3024#4976: using inherited sockets from "428;"
-2018/07/05 12:01:10 [notice] 3636#5028: signal process started
-2018/07/05 12:01:12 [notice] 5596#3416: using inherited sockets from "480;"
-2018/07/05 12:01:13 [error] 5596#5512: *20 failed to load inlined Lua code: content_by_lua(nginx.conf:34):5: '<name>' expected near 'if', client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 12:52:03 [notice] 6628#3584: signal process started
-2018/07/05 12:52:04 [notice] 4852#4256: using inherited sockets from "436;"
-2018/07/05 12:52:06 [error] 4852#6644: *21 failed to load inlined Lua code: content_by_lua(nginx.conf:34):5: '<name>' expected near 'if', client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 12:53:15 [notice] 6864#6856: signal process started
-2018/07/05 12:53:16 [notice] 6784#6852: using inherited sockets from "428;"
-2018/07/05 12:53:21 [error] 6784#6904: *22 failed to load inlined Lua code: content_by_lua(nginx.conf:33):5: '<name>' expected near 'if', client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 12:54:45 [notice] 3808#6072: signal process started
-2018/07/05 12:54:46 [notice] 6376#6460: using inherited sockets from "480;"
-2018/07/05 12:54:48 [error] 6376#6472: *23 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:33):6: bad argument #1 to 'log' (number expected, got string)
-stack traceback:
-coroutine 0:
-	[C]: in function 'log'
-	content_by_lua(nginx.conf:33):6: in function <content_by_lua(nginx.conf:33):1>, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 12:55:50 [notice] 1196#1304: signal process started
-2018/07/05 12:55:51 [notice] 4952#6388: using inherited sockets from "436;"
-2018/07/05 12:55:52 [error] 4952#5416: *24 [lua] content_by_lua(nginx.conf:33):6: OPEN FILE ERRORopenresty_test/data.db: No such file or directory, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 14:09:29 [notice] 6888#6744: signal process started
-2018/07/05 14:09:30 [notice] 4180#7084: using inherited sockets from "428;"
-2018/07/05 14:09:35 [error] 4180#6916: *26 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:20):2: module 'log.socket' not found:
-	no field package.preload['log.socket']
-	no file 'D:\openresty\openresty_test\resty\log\socket.lua'
-	no file 'd:\lua'
-	no file '.\log\socket.dll'
-	no file 'D:\openresty\lualib\log\socket.so'
-	no file 'D:\openresty\log\socket.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\log.dll'
-	no file 'D:\openresty\lualib\log.so'
-	no file 'D:\openresty\log.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(nginx.conf:20):2: in function <content_by_lua(nginx.conf:20):1>, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/05 14:10:28 [notice] 5500#6532: signal process started
-2018/07/05 14:10:29 [notice] 6148#7080: using inherited sockets from "480;"
-2018/07/05 14:11:04 [notice] 6712#5316: signal process started
-2018/07/05 14:11:05 [notice] 6260#6996: using inherited sockets from "436;"
-2018/07/05 14:38:32 [notice] 7560#7564: signal process started
-2018/07/05 14:38:34 [notice] 7604#7608: using inherited sockets from "428;"
-2018/07/05 14:38:40 [error] 7604#7648: *29 "openresty_test/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:6699"
-2018/07/05 14:55:02 [notice] 7948#7968: signal process started
-2018/07/05 14:55:03 [notice] 6416#6448: using inherited sockets from "480;"
-2018/07/05 14:56:17 [notice] 6760#8004: signal process started
-2018/07/05 14:56:18 [notice] 8164#7928: using inherited sockets from "436;"
-2018/07/05 14:59:32 [notice] 7484#7544: signal process started
-2018/07/05 14:59:33 [notice] 8148#7984: using inherited sockets from "428;"
-2018/07/05 15:28:02 [notice] 3228#7728: signal process started
-2018/07/05 15:28:03 [notice] 7288#7644: using inherited sockets from "480;"
-2018/07/05 15:51:55 [notice] 5840#5576: signal process started
-2018/07/05 15:51:56 [notice] 4256#7052: using inherited sockets from "436;"
-2018/07/05 15:52:10 [error] 4256#6684: *47 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 15:52:53 [notice] 7708#4604: signal process started
-2018/07/05 15:52:54 [notice] 7764#7556: using inherited sockets from "428;"
-2018/07/05 15:52:56 [error] 7764#8012: *48 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 15:54:59 [notice] 6628#7844: signal process started
-2018/07/05 15:55:00 [notice] 6300#4768: using inherited sockets from "480;"
-2018/07/05 16:16:27 [error] 6300#6184: *49 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:18:30 [notice] 7824#5672: signal process started
-2018/07/05 16:18:31 [notice] 3440#7180: using inherited sockets from "436;"
-2018/07/05 16:18:33 [error] 3440#7244: *50 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:20:57 [emerg] 6400#7504: unknown "prefix" variable
-2018/07/05 16:21:47 [notice] 7792#7664: signal process started
-2018/07/05 16:21:48 [notice] 7692#6868: using inherited sockets from "428;"
-2018/07/05 16:21:51 [error] 7692#7316: *51 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:22:58 [notice] 6376#4176: signal process started
-2018/07/05 16:22:59 [notice] 5540#5568: using inherited sockets from "480;"
-2018/07/05 16:23:01 [error] 5540#8184: *52 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:24:31 [notice] 6028#5956: signal process started
-2018/07/05 16:24:32 [notice] 6636#7520: using inherited sockets from "436;"
-2018/07/05 16:24:37 [error] 6636#1624: *53 CreateFile() "openresty_test/html/api/addition" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/addition HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:25:14 [notice] 5260#7564: signal process started
-2018/07/05 16:25:15 [notice] 6612#4988: using inherited sockets from "428;"
-2018/07/05 16:25:45 [notice] 7680#7788: signal process started
-2018/07/05 16:25:46 [notice] 3584#4176: using inherited sockets from "480;"
-2018/07/05 16:53:54 [notice] 7452#4140: signal process started
-2018/07/05 16:53:55 [notice] 7416#5208: using inherited sockets from "436;"
-2018/07/05 16:54:24 [error] 7416#7292: *58 lua entry thread aborted: runtime error: openresty_test/lua/access_check.lua:5: attempt to call global 'isNumber' (a nil value)
-stack traceback:
-coroutine 0:
-	openresty_test/lua/access_check.lua: in function <openresty_test/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/addition?a=3&b=m HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:55:49 [notice] 6476#7052: signal process started
-2018/07/05 16:55:50 [notice] 7680#1624: using inherited sockets from "428;"
-2018/07/05 16:55:58 [error] 7680#8140: *60 lua entry thread aborted: runtime error: openresty_test/lua/addition.lua:2: attempt to perform arithmetic on field 'b' (a string value)
-stack traceback:
-coroutine 0:
-	openresty_test/lua/addition.lua: in function <openresty_test/lua/addition.lua:1>, client: 127.0.0.1, server: , request: "GET /api/addition?a=3&b=m HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:56:52 [error] 7680#8140: *61 lua entry thread aborted: runtime error: openresty_test/lua/addition.lua:2: attempt to perform arithmetic on field 'b' (a string value)
-stack traceback:
-coroutine 0:
-	openresty_test/lua/addition.lua: in function <openresty_test/lua/addition.lua:1>, client: 127.0.0.1, server: , request: "GET /api/addition?a=3&b=m HTTP/1.1", host: "localhost:6699"
-2018/07/05 16:56:56 [notice] 4816#7216: signal process started
-2018/07/05 16:56:57 [notice] 5604#7452: using inherited sockets from "480;"
-2018/07/05 16:58:35 [notice] 2848#5580: signal process started
-2018/07/05 16:58:36 [notice] 6636#6760: using inherited sockets from "436;"
-2018/07/05 19:31:47 [alert] 4156#6116: worker process 7812 exited with code C0000142
-2018/07/05 19:31:47 [alert] 4156#6116: could not respawn worker
-2018/07/06 11:33:59 [notice] 5100#4588: using inherited sockets from "428;"
-2018/07/06 11:36:45 [notice] 6604#5260: signal process started
-2018/07/06 11:36:46 [notice] 6656#6132: using inherited sockets from "480;"
-2018/07/06 12:55:18 [notice] 3268#5416: signal process started
-2018/07/06 12:55:19 [notice] 1324#2124: using inherited sockets from "436;"
-2018/07/06 13:01:16 [emerg] 6392#2132: unknown directive "conten_by_lua_block" in openresty_test/conf/nginx.conf:26
-2018/07/06 13:01:31 [notice] 1328#6504: signal process started
-2018/07/06 13:01:32 [notice] 5800#4796: using inherited sockets from "428;"
-2018/07/06 14:34:00 [notice] 5492#3776: signal process started
-2018/07/06 14:34:01 [notice] 3388#5756: using inherited sockets from "480;"
-2018/07/06 14:34:14 [error] 3388#6436: *8 CreateFile() "openresty_test/html/mysql" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /mysql HTTP/1.1", host: "localhost:6699"
-2018/07/06 14:34:27 [error] 3388#6436: *9 failed to load external Lua file "op/lua/mysql_test.lua": cannot open op/lua/mysql_test.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /sql HTTP/1.1", host: "localhost:6699"
-2018/07/06 14:34:49 [notice] 7480#7416: signal process started
-2018/07/06 14:34:50 [notice] 7964#3828: using inherited sockets from "436;"
-2018/07/06 14:42:16 [notice] 1976#6980: signal process started
-2018/07/06 14:42:18 [notice] 6044#1844: using inherited sockets from "428;"
-2018/07/06 14:42:21 [error] 6044#6636: *12 failed to load external Lua file "openresty_test/lua/mysql_test.lua": openresty_test/lua/mysql_test.lua:65: ')' expected (to close '(' at line 63) near 'if', client: 127.0.0.1, server: , request: "GET /sql HTTP/1.1", host: "localhost:6699"
-2018/07/06 14:44:01 [notice] 5536#7384: signal process started
-2018/07/06 14:44:02 [notice] 5088#7496: using inherited sockets from "480;"
-2018/07/06 18:32:04 [emerg] 9808#8844: unknown directive "127.0.0.1:81" in openresty_test/conf/nginx.conf:13
-2018/07/06 18:32:34 [emerg] 9968#9876: unknown directive "127.0.0.1:81" in openresty_test/conf/nginx.conf:13
-2018/07/06 18:33:02 [notice] 10212#9512: signal process started
-2018/07/06 18:33:02 [notice] 7668#9464: using inherited sockets from "436;488;"
-2018/07/06 18:33:38 [error] 7668#8568: *17 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:58):3: attempt to call field 'get_body_data' (a nil value)
-stack traceback:
-coroutine 0:
-	content_by_lua(nginx.conf:58): in function <content_by_lua(nginx.conf:58):1>, client: 127.0.0.1, server: , request: "POST /spe_md5 HTTP/1.1", host: "md5server"
-2018/07/06 18:35:07 [notice] 8856#5124: signal process started
-2018/07/06 18:35:08 [notice] 9832#7036: using inherited sockets from "484;428;"
-2018/07/06 19:16:38 [notice] 9460#8440: signal process started
-2018/07/06 19:16:39 [notice] 7184#8596: using inherited sockets from "424;480;"
-2018/07/06 19:16:41 [error] 7184#7612: *26 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:52):4: attempt to concatenate local 'data' (a nil value)
-stack traceback:
-coroutine 0:
-	content_by_lua(nginx.conf:52): in function <content_by_lua(nginx.conf:52):1>, client: 127.0.0.1, server: , request: "GET /spe_md5 HTTP/1.1", host: "127.0.0.1:81"
-2018/07/06 19:18:11 [notice] 9908#5268: signal process started
-2018/07/06 19:18:12 [notice] 4156#7716: using inherited sockets from "436;488;"
-2018/07/09 14:48:49 [notice] 7960#7468: signal process started
-2018/07/09 14:48:49 [error] 7960#7468: OpenEvent("Global\ngx_reload_7048") failed (2: The system cannot find the file specified)
-2018/07/09 14:49:06 [notice] 7680#2396: using inherited sockets from "428;"
-2018/07/09 14:49:39 [error] 7680#4632: *1 failed to load external Lua file "openresty_test/lua/redis_auth": cannot open openresty_test/lua/redis_auth: No such file or directory, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 14:50:49 [notice] 7572#4120: signal process started
-2018/07/09 14:50:50 [notice] 5996#4144: using inherited sockets from "480;"
-2018/07/09 17:06:45 [notice] 7980#6328: signal process started
-2018/07/09 17:06:46 [notice] 7428#7608: using inherited sockets from "436;"
-2018/07/09 17:07:05 [error] 7428#5876: *4 failed to load external Lua file "openresty_test/lua/redis_test.lua": openresty_test/lua/redis_test.lua:6: unfinished string near ''failed to set dog: ", err)', client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 17:08:00 [error] 7428#5876: *5 lua tcp socket connect timed out, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 17:59:18 [notice] 7680#7564: signal process started
-2018/07/09 17:59:19 [notice] 3024#7276: using inherited sockets from "428;"
-2018/07/09 18:03:51 [notice] 4204#6336: signal process started
-2018/07/09 18:03:54 [notice] 5348#4880: using inherited sockets from "480;"
-2018/07/09 18:05:34 [notice] 3256#3024: signal process started
-2018/07/09 18:05:35 [notice] 7840#7744: using inherited sockets from "436;"
-2018/07/09 18:13:34 [notice] 6112#4140: signal process started
-2018/07/09 18:13:35 [notice] 8060#8180: using inherited sockets from "428;"
-2018/07/09 18:13:38 [error] 8060#7904: *17 lua entry thread aborted: runtime error: openresty_test/\lualib\resty\redis_iresty.lua:95: attempt to index global 'red' (a nil value)
-stack traceback:
-coroutine 0:
-	openresty_test/\lualib\resty\redis_iresty.lua: in function 'connect_mod'
-	openresty_test/\lualib\resty\redis_iresty.lua:173: in function 'subscribe'
-	openresty_test/lua/redis_test.lua:6: in function <openresty_test/lua/redis_test.lua:1>, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:16:09 [notice] 7512#7692: signal process started
-2018/07/09 18:16:10 [notice] 7744#7632: using inherited sockets from "480;"
-2018/07/09 18:16:21 [error] 7744#6188: *19 lua entry thread aborted: runtime error: openresty_test/lua/redis_test.lua:17: bad argument #1 to 'log' (expected table to have __tostring metamethod)
-stack traceback:
-coroutine 0:
-	[C]: in function 'log'
-	openresty_test/lua/redis_test.lua:17: in function <openresty_test/lua/redis_test.lua:1>, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:23:34 [notice] 5256#8164: signal process started
-2018/07/09 18:23:37 [notice] 7256#8180: using inherited sockets from "436;"
-2018/07/09 18:23:44 [error] 7256#5876: *23 [lua] redis_test.lua:17: table: 0x0222c320, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:24:52 [notice] 7928#4224: signal process started
-2018/07/09 18:24:55 [notice] 8048#7692: using inherited sockets from "428;"
-2018/07/09 18:25:37 [notice] 7928#7120: signal process started
-2018/07/09 18:25:40 [notice] 6944#7328: using inherited sockets from "480;"
-2018/07/09 18:25:44 [error] 6944#6016: *27 [lua] redis_test.lua:17: message, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:27:01 [notice] 4120#7880: signal process started
-2018/07/09 18:27:03 [notice] 3488#888: using inherited sockets from "436;"
-2018/07/09 18:27:15 [error] 3488#7632: *29 [lua] redis_test.lua:17: channel, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:29:08 [notice] 6988#8004: signal process started
-2018/07/09 18:29:11 [notice] 7564#6624: using inherited sockets from "428;"
-2018/07/09 18:29:19 [error] 7564#7720: *31 [lua] redis_test.lua:17: hello, i am here, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:29:52 [error] 7564#7720: *31 [lua] redis_test.lua:17: MY darlin, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:30:23 [error] 7564#7720: *31 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host), client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:30:23 [error] 7564#7720: *31 WSASend() failed (10054: An existing connection was forcibly closed by the remote host), client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/09 18:30:23 [error] 7564#7720: *31 lua entry thread aborted: runtime error: openresty_test/lua/redis_test.lua:17: attempt to index local 'res' (a nil value)
-stack traceback:
-coroutine 0:
-	openresty_test/lua/redis_test.lua: in function <openresty_test/lua/redis_test.lua:1>, client: 127.0.0.1, server: , request: "GET /test HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:29:59 [notice] 5720#1084: using inherited sockets from "428;"
-2018/07/11 14:30:26 [notice] 4016#6304: signal process started
-2018/07/11 14:30:27 [notice] 2776#6732: using inherited sockets from "480;"
-2018/07/11 14:30:45 [error] 2776#6648: *1 CreateFile() "openresty_test/html/redis_withoutpipeline" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /redis_withoutpipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:31:47 [error] 2776#6648: *2 CreateFile() "openresty_test/html/redis_without_pipeline" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:32:15 [notice] 6288#5568: signal process started
-2018/07/11 14:32:16 [notice] 4388#4784: using inherited sockets from "436;"
-2018/07/11 14:32:20 [error] 4388#4196: *3 CreateFile() "openresty_test/html/redis_withoutpipeline" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /redis_withoutpipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:32:47 [error] 4388#4196: *4 failed to load external Lua file "openresty_test/lua/redis_without_pipline.lua": cannot open openresty_test/lua/redis_without_pipline.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:33:48 [notice] 3444#6888: signal process started
-2018/07/11 14:33:49 [notice] 1776#2492: using inherited sockets from "428;"
-2018/07/11 14:33:52 [error] 1776#5164: *5 failed to load external Lua file "openresty_test/lua/redis_without_pipeline.lua": openresty_test/lua/redis_without_pipeline.lua:46: '=' expected near 'not', client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:34:43 [error] 1776#5164: *6 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:35:43 [error] 1776#5164: *6 lua tcp socket connect timed out, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 14:59:44 [error] 1776#5164: *8 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:02:30 [notice] 7580#7352: signal process started
-2018/07/11 15:02:31 [notice] 2224#7644: using inherited sockets from "480;"
-2018/07/11 15:02:36 [error] 2224#1368: *10 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:02:36 [error] 2224#1368: *10 lua entry thread aborted: runtime error: openresty_test/\lualib\resty\redis.lua:104: bad argument #1 to 'rawget' (table expected, got nil)
-stack traceback:
-coroutine 0:
-	[C]: in function 'rawget'
-	openresty_test/\lualib\resty\redis.lua:104: in function 'get_reused_times'
-	openresty_test/lua/redis_without_pipeline.lua:15: in function <openresty_test/lua/redis_without_pipeline.lua:1>, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:03:24 [notice] 7600#7892: signal process started
-2018/07/11 15:03:25 [notice] 4376#7944: using inherited sockets from "436;"
-2018/07/11 15:03:28 [error] 4376#7964: *12 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:03:38 [error] 4376#7964: *14 failed to load external Lua file "op/lua/redis_with_pipeline.lua": cannot open op/lua/redis_with_pipeline.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /redis_with_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:04:40 [notice] 6688#1280: signal process started
-2018/07/11 15:04:41 [notice] 6948#6072: using inherited sockets from "428;"
-2018/07/11 15:04:44 [error] 6948#6004: *15 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_with_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:20:08 [error] 6948#6004: *17 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:20:11 [notice] 7416#6876: signal process started
-2018/07/11 15:20:12 [notice] 6048#7752: using inherited sockets from "480;"
-2018/07/11 15:20:18 [error] 6048#748: *19 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_without_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:20:35 [error] 6048#748: *21 attempt to send data on a closed socket: u:0000000000000000, c:0000000000000000, ft:0 eof:0, client: 127.0.0.1, server: , request: "GET /redis_with_pipeline HTTP/1.1", host: "localhost:6699"
-2018/07/11 15:32:15 [notice] 6600#2776: signal process started
-2018/07/11 15:32:16 [notice] 8028#7336: using inherited sockets from "436;"
-2018/07/11 18:18:39 [emerg] 8776#9092: unexpected "}" in openresty_test/conf/nginx.conf:36
-2018/07/11 18:19:22 [emerg] 8588#8228: unexpected "}" in openresty_test/conf/nginx.conf:36
-2018/07/11 19:13:10 [notice] 4344#1164: signal process started
-2018/07/11 19:13:11 [notice] 7208#6872: using inherited sockets from "428;"
-2018/07/11 19:14:14 [emerg] 2512#6608: unexpected "}" in openresty_test/conf/nginx.conf:36
-2018/07/11 19:14:40 [notice] 8620#7720: signal process started
-2018/07/11 19:14:41 [notice] 4608#5456: using inherited sockets from "480;488;492;"
-2018/07/11 19:14:45 [error] 4608#6892: *25 lua entry thread aborted: runtime error: content_by_lua(dynamic_upstream.conf:15):2: module 'lua.test' not found:
-	no field package.preload['lua.test']
-	no file 'openresty_test/\lua\lua\test.lua'
-	no file 'openresty_test/\lualib\lua\test.lua'
-	no file 'd:\lua'
-	no file '.\lua\test.dll'
-	no file 'D:\openresty\lualib\lua\test.so'
-	no file 'D:\openresty\lua\test.dll'
-	no file 'D:\openresty\loadall.dll'
-	no file '.\lua.dll'
-	no file 'D:\openresty\lualib\lua.so'
-	no file 'D:\openresty\lua.dll'
-	no file 'D:\openresty\loadall.dll'
-stack traceback:
-coroutine 0:
-	[C]: in function 'require'
-	content_by_lua(dynamic_upstream.conf:15):2: in function <content_by_lua(dynamic_upstream.conf:15):1>, client: 127.0.0.1, server: , request: "GET /capture HTTP/1.1", host: "localhost:81"
-2018/07/11 19:18:55 [notice] 6748#6868: signal process started
-2018/07/11 19:18:56 [notice] 4128#6608: using inherited sockets from "480;484;436;"
-2018/07/11 19:19:00 [error] 4128#6792: *26 invalid URL prefix in "http://", client: 127.0.0.1, server: , request: "GET /capture HTTP/1.1", subrequest: "/upstream", host: "localhost:81"
-2018/07/11 19:22:00 [notice] 8052#9020: signal process started
-2018/07/11 19:22:01 [notice] 8036#4240: using inherited sockets from "480;424;428;"
-2018/07/11 19:22:18 [emerg] 7344#8436: unknown "my_upstream" variable
-2018/07/11 19:22:51 [notice] 6440#7008: signal process started
-2018/07/11 19:22:52 [notice] 5528#6236: using inherited sockets from "480;488;492;"
-2018/07/11 19:40:12 [alert] 6056#7052: worker process 2416 exited with code C0000142
+	openresty_test/lua/get_avg_upstreamtime.lua: in function <openresty_test/lua/get_avg_upstreamtime.lua:1>, client: 127.0.0.1, server: , request: "GET /status HTTP/1.1", host: "localhost:6699"
+2018/07/13 11:40:09 [notice] 2568#5692: signal process started
+2018/07/13 11:40:10 [notice] 6348#1708: using inherited sockets from "452;448;480;484;"
+2018/07/13 11:40:29 [notice] 5708#6784: signal process started
+2018/07/13 11:40:30 [notice] 6724#4692: using inherited sockets from "448;452;508;504;"
+2018/07/13 11:41:01 [notice] 3904#6696: signal process started
+2018/07/13 11:41:02 [notice] 2468#6868: using inherited sockets from "452;448;428;440;"
+2018/07/13 11:42:42 [notice] 5784#7024: signal process started
+2018/07/13 11:42:43 [notice] 7148#6540: using inherited sockets from "448;452;480;484;"
+2018/07/13 11:43:38 [notice] 7088#3808: signal process started
+2018/07/13 11:43:39 [notice] 2996#1812: using inherited sockets from "452;448;508;504;"
+2018/07/13 11:45:36 [notice] 6908#6976: signal process started
+2018/07/13 11:45:37 [notice] 6784#6644: using inherited sockets from "448;452;428;440;"
+2018/07/13 11:51:42 [notice] 1684#5136: signal process started
+2018/07/13 11:51:43 [notice] 6092#5240: using inherited sockets from "452;448;480;484;"
+2018/07/13 11:59:34 [notice] 7460#7464: signal process started
+2018/07/13 11:59:35 [notice] 7504#7508: using inherited sockets from "448;452;508;504;"
+2018/07/13 12:56:17 [notice] 7376#7472: signal process started
+2018/07/13 12:56:17 [notice] 6192#1460: using inherited sockets from "452;448;428;440;"
+2018/07/13 12:57:34 [notice] 7136#5800: using inherited sockets from "448;444;476;480;"
